@@ -1,0 +1,245 @@
+  /* Imports */
+  /* Icons */
+  @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+  @import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+  /* Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /********** Login Page CSS Start **********/
+  
+  section.login-main-pg {
+    background: url(../images/bg_auth.png) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    height: 100%;
+    padding: 0px 0px 50px 0px;
+  }
+  
+  .login_pg_logo {
+    padding: 60px 0px 0px 0px;
+  }
+  
+  .login_logo-img img {
+    width: 150px;
+  }
+  
+  section.login-main-pg::after {
+    background-image: linear-gradient(90deg, #111111 55%, rgb(17 17 17 / 30%));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  
+  .login_form_head h3 {
+    font-size: 52px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  
+  .login_form_head h3 span {
+    color: #2293b9;
+  }
+  
+  .login_form_head h6 a {
+    color: #2293b9;
+    transition: all .6s ease;
+  }
+  
+  .login_form_head h6 {
+    font-size: 20px;
+    color: #959ead;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .input_field {
+    margin: 12px 0px 12px 0px;
+  }
+  
+  .login_form_head {
+    margin: 100px 0px 50px 0px;
+  }
+  
+  .input_field input {
+    width: 100%;
+    display: block;
+    padding: 15px 18px 15px 18px;
+    background: #2c2c2c;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: poppins;
+  }
+  
+  .input_field input:focus {
+    border-color: #2293b9;
+    outline: 0;
+  }
+
+  .forgot_password_remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0px 0px 0px;
+}
+
+.remember_device {
+    display: flex;
+    gap: 10px;
+}
+
+.remember_device input {
+    width: 18px;
+    height: 18px;
+}
+
+.remember_device h6 {
+    color: #757786;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    line-height: 22px;
+}
+
+.forgot_btn a {
+    color: #757786;
+    font-size: 17px;
+    text-decoration: underline;
+    font-family: poppins;
+}
+  
+
+.login_btn {
+    margin: 30px 0px 0px 0px;
+}
+
+.login_btn button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 40px;
+    border: 1px solid #2293b9;
+    background: #2293b9;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .6s ease;
+}
+  
+
+.login_btn button:hover {
+    background: transparent;
+    color: #2293b9;
+}
+
+.login_form h4 {
+    font-size: 18px;
+    color: #757786;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    font-weight: 400;
+    position: relative;
+}
+
+.login_form h4::before {
+    position: absolute;
+    content: "";
+    background: #757786;
+    width: 220px;
+    height: 1px;
+    left: 0px;
+    top: 12px;
+}
+
+
+.login_form h4::after {
+    position: absolute;
+    content: "";
+    background: #757786;
+    width: 220px;
+    height: 1px;
+    right: 0px;
+    top: 12px;
+}
+
+
+.playtube_social_icon ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.playtube_social_icon ul li {
+    list-style: none;
+}
+
+.playtube_social_icon ul li a {
+    padding: 10px 15px;
+    background: #fff;
+    color: #000;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: all .6s ease;
+}
+
+
+.playtube_social_icon ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+
+.login_pg_logo .container {
+  max-width: 1250px;
+}
+
+.login_form_head h6 a:hover {
+  text-decoration: none;
+}
+
+
+.input_field select {
+  width: 100%;
+  display: block;
+  padding: 15px 18px 15px 18px;
+  background: #2c2c2c;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  font-size: 18px;
+  font-family: poppins;
+}
+
+.input_field select:focus {
+  border-color: #2293b9;
+  outline: none;
+}
+
+.remember_device h6 a {
+  color: #fff;
+}
+
+.login_form_head h6 a:hover {
+  text-decoration: underline;
+}
+
+
+  
+/********** Login Page CSS End **********/
+  
